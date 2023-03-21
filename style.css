@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    /* Primary */
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+    /* Neutral */
+    /* paragraphs */
+    --Transparentwhite: hsla(0, 0%, 100%, 0.75);
+    /* background, headings, buttons */
+    --Verylightgray: hsl(0, 0%, 95%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 15px;
+    background-color: var(--Verylightgray);
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: var(--Transparentwhite);
+}
+
+button {
+    background: none;
+    padding: 1rem 2.5rem;
+    outline: none;
+    border: none;
+    position: relative;
+    mix-blend-mode: screen;
+    font-weight: 700;
+    transition: all 0.4s ease 0s;
+}
+button::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: white;
+    border-radius: 25px;
+    content: '';
+    mix-blend-mode: color-burn;
+    transition: all 0.4s ease 0s;
+
+  }
+
+button:hover::before {
+    cursor: pointer;
+    background: none;
+    border: 2px solid  white;
+
+}
+button:hover {
+    color: white;
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.car-section {
+    background-color: var(--Brightorange);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.jeep-section {
+    background-color: var(--Darkcyan);
+}
+
+.sport-car-section {
+    background-color: var(--Verydarkcyan);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.section {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.section h1 {
+    color: var(--Verylightgray);
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.section .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.content p {
+    line-height: 1.7rem;
+}
+
+.button-section {
+    height: 100%;
+    display: flex;
+    align-items: end;
+    margin-top: 4rem;
+}
+
+@media (min-width: 900px) {
+    body {
+        height: 100vh;
+    }
+}
+@media (max-width: 897px) {
+    body {
+        padding: 4rem 2rem;
+    }
+
+    .car-section {
+        border-radius: unset;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    
+    .sport-car-section {
+        border-radius: unset;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+}
