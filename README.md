@@ -10,7 +10,6 @@ This is a solution to the [Column card component challenge on Frontend Mentor](h
 
 - [The challenge](#the-challenge)
 - [Screenshot](#screenshot)
-- [Links](#links)
 - [Built with](#built-with)
 
 ## Overview
