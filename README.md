@@ -1,6 +1,7 @@
 # Frontend Mentor - Column card Component
 
-![Design preview for the Social proof section coding challenge](./design/desktop-preview.jpg)
+![Design preview for the challenge](./design/desktop-preview.jpg)
+![Design focus preview for the challenge](./design/active-states.jpg)
 
 
 This is a solution to the [Column card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA/hub). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
@@ -23,12 +24,6 @@ Users should be able to:
 ### Screenshot
 
 ![](./images/solution.png)
-
-
-### Links
-
-- Solution URL: [Frontmentor]()
-- Live URL: [Github Pages](https://alexisdm1985.github.io/column-card-frontmentor/)
 
 
 ### Built with
